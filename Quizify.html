@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="top">
+        <div>
+          <div class="title">Mini Quiz</div>
+          <div class="meta" id="meta">Soru 1 / 5</div>
+        </div>
+        <div class="meta" id="scoreMeta">Puan: 0</div>
+      </div>
+
+      <div class="barWrap">
+        <div class="bar">
+          <div class="barFill" id="barFill"></div>
+        </div>
+      </div>
+
+      <div class="content" id="quizView">
+        <div class="q" id="question">Soru Gelecek...</div>
+        <div id="options" class="options"></div>
+      </div>
+
+      <div class="result" id="resultView">
+        <div class="badge" id="badge">Tamamlandı.</div>
+        <div class="score" id="finalScore">0/5</div>
+        <div class="summary" id="summary"></div>
+        <button class="btn primary" id="restartBtn">Tekrar Başlat</button>
+        <div class="small">
+          İpucu: Soruları değiştirmek için script.js dosyasını düzenleyin.
+        </div>
+      </div>
+
+      <div class="bottom" id="bottomBar">
+        <div class="note" id="note">Bir seçeneğe tıkla. Cevap gösterilir.</div>
+        <div class="actions">
+          <button class="btn" id="skipBtn">Atla</button>
+          <button class="btn primary" id="nextBtn" disabled>Sonraki</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
